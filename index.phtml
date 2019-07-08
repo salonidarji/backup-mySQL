@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Google Drive Example App</title>
+    </head>
+    <body>
+    <h1>
+    Generate mySQL backup
+</h1>
+        <form action="" method="post" >
+<input type="text" name="database" placeholder="Enter Database Name...">
+<button type="submit" id="submit" name="backup"  >generate backup</button>
+
+</form>
+            
+                <ul>
+        <?php foreach ($files as $file) { ?>
+            <li><?php echo $file; ?></li>
+        <?php } ?>
+        </ul>
+        <form method="post" action="<?php echo $url; ?>">
+           <br/> <input type="submit" value="Upload to Drive" name="submit">
+        </form>
+           
+    </body>
+</html>
